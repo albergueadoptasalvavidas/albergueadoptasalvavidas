@@ -138,6 +138,79 @@ nav a:hover {
     font-size: 18px;
     color: #555;
 }
+
+    /* HISTORIA SECTION */
+.historia {
+    background-color: #fae6a3; /* pastel basado en #f2c23b */
+    padding: 80px 100px;
+    text-align: center;
+}
+
+.historia h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #7c2237;
+}
+
+.historia p {
+    margin-bottom: 50px;
+    font-size: 18px;
+    color: #555;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.timeline-item {
+    flex: 1;
+    min-width: 200px;
+}
+
+.timeline-item img {
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.timeline-item h3 {
+    color: #7c2237;
+}
+
+/* REALIDAD SECTION */
+.realidad {
+    padding: 80px 100px;
+    text-align: center;
+    background-color: white;
+}
+
+.realidad h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #7c2237;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.paw {
+    font-size: 50px;
+    color: #f2c23b;
+    margin: 20px;
+}
+
+.paw p {
+    font-size: 18px;
+    color: #7c2237;
+    margin-top: 10px;
+}
 </style>
 </head>
 
@@ -173,14 +246,64 @@ nav a:hover {
     <img src="perritos.jpg" alt="Perritos en adopción">
 </section>
 
-<!-- SECTION BELOW -->
-<section class="section">
+<!-- HISTORIA SECTION -->
+<section class="historia">
     <h2>Cada adopción cambia una historia</h2>
     <p>
     Rescatamos, rehabilitamos y damos en adopción responsable a perros en situación de abandono. 
     Tú puedes ser parte del cambio.
     </p>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <img src="llego.jpg" alt="Cómo llegó">
+            <h3>Cómo llegó</h3>
+        </div>
+
+        <div class="timeline-item">
+            <img src="aqui.jpg" alt="Cómo estuvo aquí">
+            <h3>Cómo estuvo aquí</h3>
+        </div>
+
+        <div class="timeline-item">
+            <img src="se_fue.jpg" alt="Cómo se fue">
+            <h3>Cómo se fue</h3>
+        </div>
+
+        <div class="timeline-item">
+            <img src="ahora.jpg" alt="Cómo está ahora">
+            <h3>Cómo está ahora</h3>
+        </div>
+    </div>
 </section>
 
+
+<!-- REALIDAD HOY SECTION -->
+<section class="realidad">
+    <h2>La realidad hoy</h2>
+
+    <div class="stats">
+        <div class="paw">
+            🐾
+            <p>120 en la calle</p>
+        </div>
+
+        <div class="paw">
+            🐾
+            <p>80 rescatados</p>
+        </div>
+
+        <div class="paw">
+            🐾
+            <p>35 buscando hogar</p>
+        </div>
+
+        <div class="paw">
+            🐾
+            <p>210 con nuevo hogar</p>
+        </div>
+    </div>
+</section>
+    
 </body>
 </html>
