@@ -214,24 +214,46 @@ nav a:hover {
     margin-top: 10px;
 }
 
-    /* ===== RESPONSIVE DESIGN ===== */
+/* HAMBURGER BUTTON */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #7c2237;
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
 
+    /* NAV */
     nav {
-        flex-direction: column;
+        flex-wrap: wrap;
         padding: 20px;
-        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
     }
 
     nav ul {
+        display: none;
         flex-direction: column;
-        gap: 15px;
+        width: 100%;
+        background-color: #f2c23b;
         margin-top: 15px;
+        padding: 20px 0;
+        gap: 20px;
+        text-align: center;
     }
 
+    nav ul.active {
+        display: flex;
+    }
+
+    /* HERO */
     .hero {
         flex-direction: column;
-        padding: 40px 20px;
+        padding: 60px 25px;
         text-align: center;
     }
 
@@ -239,30 +261,36 @@ nav a:hover {
         max-width: 100%;
     }
 
-    .hero-text h1 {
-        font-size: 40px;
-    }
-
     .hero img {
-        width: 90%;
-        margin-top: 30px;
+        width: 100%; /* No la hacemos pequeña */
+        margin-top: 40px;
     }
 
+    /* BOTONES MÁS GRANDES */
+    .buttons a {
+        display: block;
+        margin: 15px auto;
+        width: 80%;
+        font-size: 18px;
+        padding: 18px;
+    }
+
+    /* HISTORIA VERTICAL */
     .timeline {
         flex-direction: column;
-        align-items: center;
+        gap: 40px;
     }
 
+    .timeline-item img {
+        height: 300px;
+    }
+
+    /* STATS VERTICAL */
     .stats {
         flex-direction: column;
-        align-items: center;
-    }
-
-    .historia, .realidad {
-        padding: 60px 20px;
+        gap: 30px;
     }
 }
-    
 </style>
 </head>
 
@@ -275,7 +303,11 @@ nav a:hover {
         <span>Adopta Salva Vidas</span>
     </div>
 
-    <ul>
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    <ul id="menu">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="heroe.html">Sé un héroe canino</a></li>
         <li><a href="sobre.html">Sobre nosotros</a></li>
