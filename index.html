@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Adopta Salva Vidas</title>
 
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="Logo_blancotransparente.png">
+
 <!-- Fuente Poppins -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
@@ -26,8 +29,22 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    background-color: #f2c23b;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #7c2237;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
 nav ul {
@@ -38,12 +55,12 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #7c2237;
     font-weight: 500;
 }
 
 nav a:hover {
-    color: #ff7a00;
+    opacity: 0.7;
 }
 
 /* HERO SECTION */
@@ -61,7 +78,7 @@ nav a:hover {
 .hero-text h1 {
     font-size: 60px;
     font-weight: 700;
-    color: #ff7a00;
+    color: #7c2237;
     line-height: 1.1;
 }
 
@@ -77,21 +94,20 @@ nav a:hover {
     text-decoration: none;
     font-weight: 500;
     transition: 0.3s;
+    color: white;
 }
 
+/* BOTONES */
 .btn-adopta {
-    background-color: #ff7a00;
-    color: white;
+    background-color: #f2c23b;
 }
 
 .btn-apadrina {
-    background-color: #ffb347;
-    color: white;
+    background-color: #d68f2a; /* Color intermedio cálido */
 }
 
 .btn-dona {
-    background-color: #333;
-    color: white;
+    background-color: #7c2237;
 }
 
 .buttons a:hover {
@@ -115,6 +131,7 @@ nav a:hover {
 .section h2 {
     font-size: 40px;
     margin-bottom: 20px;
+    color: #7c2237;
 }
 
 .section p {
@@ -128,7 +145,11 @@ nav a:hover {
 
 <!-- NAVBAR -->
 <nav>
-    <h2>🐾 Adopta Salva Vidas</h2>
+    <div class="logo">
+        <img src="Logo_blancotransparente.png" alt="Logo">
+        <span>Adopta Salva Vidas</span>
+    </div>
+
     <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="heroe.html">Sé un héroe canino</a></li>
@@ -155,8 +176,10 @@ nav a:hover {
 <!-- SECTION BELOW -->
 <section class="section">
     <h2>Cada adopción cambia una historia</h2>
-    <p>Rescatamos, rehabilitamos y damos en adopción responsable a perros en situación de abandono. 
-    Tú puedes ser parte del cambio.</p>
+    <p>
+    Rescatamos, rehabilitamos y damos en adopción responsable a perros en situación de abandono. 
+    Tú puedes ser parte del cambio.
+    </p>
 </section>
 
 </body>
