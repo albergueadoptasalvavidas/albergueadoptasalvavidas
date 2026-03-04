@@ -223,46 +223,47 @@ nav a:hover {
 }
 
 /* ===== FOOTER CONTACTO ===== */
-/* ===== FOOTER NUEVO ===== */
 .footer {
     background-color: #f2c23b;
-    padding: 60px 80px 20px 80px;
+    padding: 60px 20px 20px 20px;
 }
 
 .footer-content {
+    max-width: 1000px;      /* limita ancho */
+    margin: 0 auto;         /* centra todo */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 60px;
     flex-wrap: wrap;
 }
 
-/* LADO IZQUIERDO */
+/* LOGO */
 .footer-left img {
-    width: 120px;   /* logo más grande */
+    width: 140px;   /* mismo peso visual que el texto */
 }
 
 /* LADO DERECHO */
 .footer-right {
-    text-align: right;
+    text-align: left;
 }
 
 .footer-right h3 {
     color: black;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     font-size: 22px;
 }
 
-/* ICONOS EN LÍNEA */
+/* ICONOS */
 .footer-social {
     display: flex;
-    gap: 20px;
-    justify-content: flex-end;
-    margin-bottom: 20px;
+    gap: 18px;
+    margin-bottom: 18px;
 }
 
 .footer-social img {
-    width: 28px;
-    height: 28px;
+    width: 26px;
+    height: 26px;
     transition: 0.3s;
 }
 
@@ -274,12 +275,12 @@ nav a:hover {
 .footer-contact {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
 }
 
 .footer-contact a {
     text-decoration: none;
-    color: black;   /* letras negras como pediste */
+    color: black;
     font-weight: 500;
 }
 
@@ -289,7 +290,8 @@ nav a:hover {
 
 /* Línea inferior */
 .footer-bottom {
-    margin-top: 40px;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
     text-align: center;
     font-size: 14px;
     color: #444;
@@ -302,8 +304,8 @@ nav a:hover {
 
     .footer-content {
         flex-direction: column;
-        gap: 40px;
         text-align: center;
+        gap: 40px;
     }
 
     .footer-right {
