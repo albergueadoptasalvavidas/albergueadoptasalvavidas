@@ -223,52 +223,68 @@ nav a:hover {
 }
 
 /* ===== FOOTER CONTACTO ===== */
+/* ===== FOOTER NUEVO ===== */
 .footer {
-    background-color: #f2c23b; /* Amarillo del header */
-    padding: 50px 80px 20px 80px;
+    background-color: #f2c23b;
+    padding: 60px 80px 20px 80px;
 }
 
-.footer-top {
+.footer-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 80px;
     flex-wrap: wrap;
-    text-align: center;
 }
 
-.footer-brand img {
-    width: 60px;
-    margin-bottom: 10px;
+/* LADO IZQUIERDO */
+.footer-left img {
+    width: 120px;   /* logo más grande */
 }
 
-.footer-brand h2 {
-    color: #7c2237;
-    font-size: 20px;
+/* LADO DERECHO */
+.footer-right {
+    text-align: right;
 }
 
-.footer-contact p {
-    margin: 6px 0;
-    color: #7c2237;
+.footer-right h3 {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 22px;
 }
 
-.footer-social a {
-    display: block;
-    margin: 6px 0;
+/* ICONOS EN LÍNEA */
+.footer-social {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.footer-social img {
+    width: 28px;
+    height: 28px;
+    transition: 0.3s;
+}
+
+.footer-social img:hover {
+    transform: scale(1.1);
+}
+
+/* CONTACTO */
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-contact a {
     text-decoration: none;
-    color: #7c2237;
+    color: black;   /* letras negras como pediste */
     font-weight: 500;
 }
 
-.footer-social a:hover {
+.footer-contact a:hover {
     opacity: 0.7;
-}
-
-/* ICONOS REDES */
-.social-link img {
-    width: 18px;
-    height: 18px;
-    object-fit: contain;
 }
 
 /* Línea inferior */
@@ -276,20 +292,26 @@ nav a:hover {
     margin-top: 40px;
     text-align: center;
     font-size: 14px;
-    color: #666; /* gris elegante */
-    border-top: 1px solid rgba(0,0,0,0.1);
+    color: #444;
+    border-top: 1px solid rgba(0,0,0,0.2);
     padding-top: 15px;
 }
 
-/* Responsive footer */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-    .footer {
-        padding: 40px 20px;
+
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
     }
 
-    .footer-top {
-        flex-direction: column;
-        gap: 30px;
+    .footer-right {
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
     }
 }
     
@@ -494,39 +516,45 @@ nav a:hover {
 <!-- FOOTER -->
 <footer class="footer">
     
-    <div class="footer-top">
-        <div class="footer-brand">
+    <div class="footer-content">
+        
+        <!-- LADO IZQUIERDO -->
+        <div class="footer-left">
             <img src="Logo_pequeño.png" alt="Logo">
         </div>
 
-        <div class="footer-contact">
-             <a href="https://wa.me/51955288116" target="_blank">📞 +51 955 288 116</a>
-             <a href="mailto:albergue.adoptasalvavidas@gmail.com" target="_blank"><p>📧 albergue.adoptasalvavidas@gmail.com</a>
+        <!-- LADO DERECHO -->
+        <div class="footer-right">
+            <h3>Contáctanos</h3>
+
+            <!-- Redes -->
+            <div class="footer-social">
+                <a href="https://www.facebook.com/adoptasalvavidas.pe" target="_blank">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+
+                <a href="https://www.instagram.com/Albergue.adoptasalvavidas" target="_blank">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+
+                <a href="https://www.tiktok.com/@adopta.salvavidas" target="_blank">
+                    <img src="tiktok.png" alt="TikTok">
+                </a>
+
+                <a href="https://wa.me/51955288116" target="_blank">
+                    <img src="whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+
+            <!-- Datos -->
+            <div class="footer-contact">
+                <a href="tel:+51955288116">+51 955 288 116</a>
+                <a href="mailto:albergue.adoptasalvavidas@gmail.com">
+                    albergue.adoptasalvavidas@gmail.com
+                </a>
+            </div>
         </div>
 
-<div class="footer-social">
-    
-    <a href="https://facebook.com" target="_blank" class="social-link">
-        <img src="facebook.png" alt="Facebook">
-        Facebook
-    </a>
-
-    <a href="https://instagram.com" target="_blank" class="social-link">
-        <img src="instagram.png" alt="Instagram">
-        Instagram
-    </a>
-
-    <a href="https://tiktok.com" target="_blank" class="social-link">
-        <img src="tiktok.png" alt="TikTok">
-        TikTok
-    </a>
-
-    <a href="https://wa.me/51955288116" target="_blank" class="social-link">
-        <img src="whatsapp.png" alt="WhatsApp">
-        WhatsApp
-    </a>
-
-</div>
     </div>
 
     <div class="footer-bottom">
